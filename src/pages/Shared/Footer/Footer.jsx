@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="lg:w-1/4 md:w-1/4 w-full lg:mb-0 md:mb-0 mb-8">
             <a href="/">
               <img
-                className="lg:w-64 md:w-44 w-32 mb-4 lg:mx-0 md:mx-0 mx-auto"
+                className="lg:w-64 md:w-44 w-40 mb-4 lg:mx-0 md:mx-0 mx-auto"
                 src={logoImg}
                 alt=""
               />

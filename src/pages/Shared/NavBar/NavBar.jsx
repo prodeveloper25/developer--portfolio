@@ -98,19 +98,39 @@ const NavBar = () => {
           >
             <Navbar.Container tag="ul" className="flex flex-col gap-5">
               <Navbar.Link
-                linkName={<Link className="text-black ">Home</Link>}
+                linkName={
+                  <Link to="/" className="text-black ">
+                    Home
+                  </Link>
+                }
               />
               <Navbar.Link
-                linkName={<Link className="text-black ">Works</Link>}
+                linkName={
+                  <Link to="/work" className="text-black ">
+                    Works
+                  </Link>
+                }
               />
               <Navbar.Link
-                linkName={<Link className="text-black ">Services</Link>}
+                linkName={
+                  <Link to="/services" className="text-black ">
+                    Services
+                  </Link>
+                }
               />
               <Navbar.Link
-                linkName={<Link className="text-black ">Skills</Link>}
+                linkName={
+                  <Link to="/skills" className="text-black ">
+                    Skills
+                  </Link>
+                }
               />
               <Navbar.Link
-                linkName={<Link className="text-black ">Contact</Link>}
+                linkName={
+                  <Link to="/contact" className="text-black ">
+                    Contact
+                  </Link>
+                }
               />
               <Navbar.Link
                 linkName={
