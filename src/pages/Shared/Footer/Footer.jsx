@@ -64,7 +64,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="lg:mb-0 md:mb-0 mb-8">
-              <h3 className="text-xl font-medium mb-3">Our Social Link</h3>
+              <h3 className="text-xl font-medium mb-3">Our Social Links</h3>
               <div className="grid grid-cols-1 gap-3">
                 <a
                   href="https://www.facebook.com/prodeveloper25"

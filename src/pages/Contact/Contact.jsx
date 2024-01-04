@@ -2,8 +2,66 @@ import Lottie from "lottie-react";
 import contactUsImg from "../../assets/animation/contactUsImg.json";
 import { TextInput, Textarea } from "keep-react";
 import { FaTelegramPlane } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import Swal from "sweetalert2";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        `${import.meta.env.VITE_CNT_SERVICES_ID}`,
+        `${import.meta.env.VITE_CNT_TEMPLATE_ID}`,
+        form.current,
+        `${import.meta.env.VITE_CNT_PUBLIC_KEY}`
+      )
+      .then(
+        (result) => {
+          e.target.reset();
+          const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            background: "green",
+            color: "white",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            },
+          });
+          Toast.fire({
+            icon: "success",
+            title: "Message Has Been Sended",
+          });
+        },
+        (error) => {
+          console.log(error.text);
+          const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            background: "red",
+            color: "white",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            },
+          });
+          Toast.fire({
+            icon: "error",
+            title: `${error.text}`,
+          });
+        }
+      );
+  };
   return (
     <div className="lg:mt-16 md:mt-12 mt-12">
       <div className="flex items-center gap-2 lg:mb-6 md:mb-5 mb-3">
@@ -19,7 +77,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="lg:w-1/2 md:w-1/2 w-full">
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <h2 className="lg:text-3xl md:text-2xl text-2xl md:mb-4 lg:mb-6 mb-4 font-semibold">
               Feel Free to Drop{" "}
               <span className="text-[#fc3a40]">Me a Line</span>
@@ -29,7 +87,7 @@ const Contact = () => {
               <p className="mb-1 ml-1">
                 Name<span className="text-[#fc3a40]">*</span>
               </p>
-              <TextInput placeholder="Name" color="gray" />
+              <TextInput name="from_name" placeholder="Name" color="gray" />
             </div>
             {/* Name End */}
             {/* Email Start */}
@@ -37,7 +95,7 @@ const Contact = () => {
               <p className="mb-1 ml-1">
                 Email<span className="text-[#fc3a40]">*</span>
               </p>
-              <TextInput placeholder="Email" color="gray" />
+              <TextInput name="from_email" placeholder="Email" color="gray" />
             </div>
             {/* Email End */}
             {/* Message Start */}
@@ -47,6 +105,7 @@ const Contact = () => {
               </p>
               <Textarea
                 id="comment"
+                name="message"
                 placeholder="Leave a message..."
                 withBg={true}
                 color="white"
