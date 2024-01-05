@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import logoImg from "../../../assets/icon/logo2.png";
 import {
   FaBook,
-  FaDribbble,
   FaFacebook,
+  FaGithub,
   FaHome,
   FaInstagram,
   FaLinkedin,
@@ -83,11 +83,11 @@ const Footer = () => {
                   <FaLinkedin className="text-lg"></FaLinkedin> Linkedin
                 </a>
                 <a
-                  href="https://twitter.com/ProDeveloperBD2"
+                  href="https://github.com/prodeveloper25"
                   target="blank"
                   className="text-slate-700 hover:underline cursor-pointer flex items-center gap-2 lg:justify-start md:justify-start justify-center"
                 >
-                  <FaTwitter className="text-lg"></FaTwitter> Twitter
+                  <FaGithub className="text-lg"></FaGithub> Github
                 </a>
                 <a
                   href="https://www.instagram.com/pro_developer25"
@@ -95,13 +95,13 @@ const Footer = () => {
                   className="text-slate-700 hover:underline cursor-pointer flex items-center gap-2 lg:justify-start md:justify-start justify-center"
                 >
                   <FaInstagram className="text-lg"></FaInstagram> Instagram
-                </a>
+                </a>{" "}
                 <a
-                  href="https://dribbble.com/pro_developer25"
+                  href="https://twitter.com/ProDeveloperBD2"
                   target="blank"
                   className="text-slate-700 hover:underline cursor-pointer flex items-center gap-2 lg:justify-start md:justify-start justify-center"
                 >
-                  <FaDribbble className="text-lg"></FaDribbble> Dribbble
+                  <FaTwitter className="text-lg"></FaTwitter> Twitter
                 </a>
               </div>
             </div>
