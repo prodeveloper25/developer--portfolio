@@ -11,7 +11,7 @@ const Expertise = () => {
       .then((data) => setExpertises(data));
   }, []);
   return (
-    <div className="mt-4 bg-[#dbffd8] lg:px-10 py-9 md:px-5 px-4">
+    <div className="mt-4 bg-[#dbffd8] lg:px-10 py-9 md:px-5 px-4 lg:mx-0 md:mx-2 mx-4">
       <div className="flex items-center gap-2 lg:mb-6 md:mb-5 mb-4">
         <h2>------</h2>
         <div className="bg-[#bdf8b5] text-[#14a800] px-3 rounded py-1">

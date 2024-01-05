@@ -11,7 +11,68 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    const validForm = e.target;
+    const name = validForm.from_name.value;
+    const email = validForm.from_email.value;
+    const messageInput = validForm.message.value;
+    if (name === "") {
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        background: "red",
+        color: "white",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        },
+      });
+      Toast.fire({
+        icon: "error",
+        title: "Name is Required",
+      });
+      return;
+    } else if (email === "") {
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        background: "red",
+        color: "white",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        },
+      });
+      Toast.fire({
+        icon: "error",
+        title: "Email is Required",
+      });
+      return;
+    } else if (messageInput === "") {
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        background: "red",
+        color: "white",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        },
+      });
+      Toast.fire({
+        icon: "error",
+        title: "Message is Required",
+      });
+      return;
+    }
     emailjs
       .sendForm(
         `${import.meta.env.VITE_CNT_SERVICES_ID}`,
@@ -20,7 +81,7 @@ const Contact = () => {
         `${import.meta.env.VITE_CNT_PUBLIC_KEY}`
       )
       .then(
-        (result) => {
+        () => {
           e.target.reset();
           const Toast = Swal.mixin({
             toast: true,
@@ -40,8 +101,7 @@ const Contact = () => {
             title: "Message Has Been Sended",
           });
         },
-        (error) => {
-          console.log(error.text);
+        () => {
           const Toast = Swal.mixin({
             toast: true,
             position: "top-end",
@@ -57,13 +117,13 @@ const Contact = () => {
           });
           Toast.fire({
             icon: "error",
-            title: `${error.text}`,
+            title: "Please Try Again",
           });
         }
       );
   };
   return (
-    <div className="lg:mt-16 md:mt-12 mt-12">
+    <div className="lg:mt-16 md:mt-12 mt-12 lg:mx-0 md:mx-2 mx-4">
       <div className="flex items-center gap-2 lg:mb-6 md:mb-5 mb-3">
         <h2>------</h2>
         <div className="bg-[#bdf8b5] text-[#14a800] px-3 rounded py-1">

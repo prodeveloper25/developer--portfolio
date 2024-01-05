@@ -7,11 +7,13 @@ import {
   FaHome,
   FaInstagram,
   FaLinkedin,
+  FaLocationArrow,
   FaPhoneAlt,
   FaServicestack,
   FaShoppingBag,
   FaTwitter,
 } from "react-icons/fa";
+import { FaMessage } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -100,6 +102,27 @@ const Footer = () => {
                   className="text-slate-700 hover:underline cursor-pointer flex items-center gap-2 lg:justify-start md:justify-start justify-center"
                 >
                   <FaDribbble className="text-lg"></FaDribbble> Dribbble
+                </a>
+              </div>
+            </div>
+            <div className="lg:mb-0 md:mb-0 mb-8">
+              <h3 className="text-xl font-medium mb-3">Our Address</h3>
+              <div className="grid grid-cols-1 gap-3">
+                <p className="text-slate-700 flex items-center gap-2 lg:justify-start md:justify-start justify-center">
+                  <FaLocationArrow></FaLocationArrow> Bangladesh, Khulna,
+                  Daulatpur
+                </p>
+                <a
+                  href="mailto:prodeveloper25h@gmail.com"
+                  className="text-slate-700 hover:underline cursor-pointer flex items-center gap-2 lg:justify-start md:justify-start justify-center"
+                >
+                  <FaMessage></FaMessage> prodeveloper25h@gmail.com
+                </a>
+                <a
+                  href="tel:+8801568501849"
+                  className="text-slate-700 hover:underline cursor-pointer flex items-center gap-2 lg:justify-start md:justify-start justify-center"
+                >
+                  <FaPhoneAlt></FaPhoneAlt> +880 1568-501849
                 </a>
               </div>
             </div>
