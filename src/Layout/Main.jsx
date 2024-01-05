@@ -7,7 +7,9 @@ const Main = () => {
     <>
       <NavBar></NavBar>
       <div className="max-w-screen-xl mx-auto">
-        <Outlet></Outlet>
+        <div className="mx-4">
+          <Outlet></Outlet>
+        </div>
       </div>
       <Footer></Footer>
     </>

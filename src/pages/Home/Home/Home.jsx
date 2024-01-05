@@ -8,7 +8,7 @@ import Statistics from "../Statistics/Statistics";
 
 const Home = () => {
   return (
-    <div className="mx-4">
+    <>
       <About></About>
       <Review></Review>
       <ContactStatus></ContactStatus>
@@ -16,7 +16,7 @@ const Home = () => {
       <Services></Services>
       <Statistics></Statistics>
       <Contact></Contact>
-    </div>
+    </>
   );
 };
 

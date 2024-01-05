@@ -6,7 +6,7 @@ import webDevelopmentImg from "../../assets/icon/webDevelopment.png";
 const Services = () => {
   return (
     <>
-      <div className="lg:mt-20 md:mt-16 mt-14 lg:mx-0 md:mx-2 mx-4">
+      <div className="lg:mt-20 md:mt-16 mt-14">
         <div className="flex items-center gap-2 lg:mb-6 md:mb-5 mb-4">
           <h2>------</h2>
           <div className="bg-[#ffc5c7] text-[#fc3a40] px-3 rounded py-1">
