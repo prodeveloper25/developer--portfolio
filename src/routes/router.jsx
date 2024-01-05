@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home/Home";
 import Services from "../pages/Services/Services";
 import Expertise from "../pages/Home/Expertise/Expertise";
 import Contact from "../pages/Contact/Contact";
+import NotFound from "../Layout/NotFound";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
         element: <Contact></Contact>,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFound></NotFound>,
   },
 ]);
 export default router;
