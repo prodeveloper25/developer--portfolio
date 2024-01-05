@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#bdf8b5] mt-3">
       <div className="max-w-screen-xl mx-auto">
-        <div className="lg:flex md:flex flex-1 lg:px-2 md:px-8 py-10 px-4">
+        <div className="lg:flex md:flex flex-1 lg:px-2 md:px-8 py-10 px-4 lg:gap-0 md:gap-48">
           <div className="lg:w-1/4 md:w-1/4 w-full lg:mb-0 md:mb-0 mb-8">
             <a href="/">
               <img
@@ -34,8 +34,8 @@ const Footer = () => {
               Business? Let`s shake hands with Nahid Hasan.
             </p>
           </div>
-          <div className="lg:w-3/4 md:w-3/4 w-full lg:flex md:flex flex-1 gap-20 justify-center lg:text-start md:text-start text-center">
-            <div className="lg:mb-0 md:mb-0 mb-8">
+          <div className="lg:w-3/4 md:w-3/4 w-full lg:flex md:flex-1 flex-1 gap-20 justify-center lg:text-start md:text-start text-center">
+            <div className="lg:mb-0 md:mb-5 mb-8">
               <h3 className="text-xl font-medium mb-3">Quick Links</h3>
               <div className="grid grid-cols-1 gap-3">
                 <Link className="hover:underline text-slate-700 flex items-center gap-2 lg:justify-start md:justify-start justify-center">
@@ -65,7 +65,7 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className="lg:mb-0 md:mb-0 mb-8">
+            <div className="lg:mb-0 md:mb-5 mb-8">
               <h3 className="text-xl font-medium mb-3">Our Social Links</h3>
               <div className="grid grid-cols-1 gap-3">
                 <a
