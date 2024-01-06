@@ -158,6 +158,7 @@ const Contact = () => {
               <TextInput name="from_email" placeholder="Email" color="gray" />
             </div>
             {/* Email End */}
+
             {/* Message Start */}
             <div className="lg:w-3/4 w-full md:mb-6 mb-8 lg:mb-10">
               <p className="mb-1 ml-1">
