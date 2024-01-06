@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/scrollbar";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Keyboard, Scrollbar, Navigation } from "swiper/modules";
+import { Scrollbar, Navigation } from "swiper/modules";
 import { useEffect, useState } from "react";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
@@ -32,16 +32,13 @@ const Review = () => {
           slidesPerView={1}
           centeredSlides={false}
           grabCursor={true}
-          keyboard={{
-            enabled: true,
-          }}
           breakpoints={{
             769: {
               slidesPerView: 2,
               slidesPerGroup: 1,
             },
           }}
-          modules={[Keyboard, Scrollbar, Navigation]}
+          modules={[Scrollbar, Navigation]}
           className="mySwiper"
         >
           {reviews.map((review) => (

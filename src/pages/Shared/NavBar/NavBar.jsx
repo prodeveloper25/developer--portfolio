@@ -3,6 +3,7 @@ import logo from "../../../assets/icon/logo.png";
 import { Link, NavLink } from "react-router-dom";
 import "./NavBar.css";
 import { FaTelegramPlane } from "react-icons/fa";
+
 const NavBar = () => {
   return (
     <div className="shadow-lg">
