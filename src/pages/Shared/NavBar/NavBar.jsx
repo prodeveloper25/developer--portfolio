@@ -1,6 +1,6 @@
 import { Navbar } from "keep-react";
 import logo from "../../../assets/icon/logo.png";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 import { FaTelegramPlane } from "react-icons/fa";
 
@@ -99,38 +99,43 @@ const NavBar = () => {
           >
             <Navbar.Container tag="ul" className="flex flex-col gap-5">
               <Navbar.Link
+                className="all-link-mini"
                 linkName={
-                  <Link to="/" className="text-black ">
+                  <NavLink to="/" className="text-black">
                     Home
-                  </Link>
+                  </NavLink>
                 }
               />
               <Navbar.Link
+                className="all-link-mini"
                 linkName={
-                  <Link to="/work" className="text-black ">
+                  <NavLink to="/works" className="text-black ">
                     Works
-                  </Link>
+                  </NavLink>
                 }
               />
               <Navbar.Link
+                className="all-link-mini"
                 linkName={
-                  <Link to="/services" className="text-black ">
+                  <NavLink to="/services" className="text-black ">
                     Services
-                  </Link>
+                  </NavLink>
                 }
               />
               <Navbar.Link
+                className="all-link-mini"
                 linkName={
-                  <Link to="/skills" className="text-black ">
+                  <NavLink to="/skills" className="text-black ">
                     Skills
-                  </Link>
+                  </NavLink>
                 }
               />
               <Navbar.Link
+                className="all-link-mini"
                 linkName={
-                  <Link to="/contact" className="text-black ">
+                  <NavLink to="/contact" className="text-black ">
                     Contact
-                  </Link>
+                  </NavLink>
                 }
               />
               <Navbar.Link
