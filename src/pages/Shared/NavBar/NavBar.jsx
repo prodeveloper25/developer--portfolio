@@ -1,8 +1,8 @@
 import { Navbar } from "keep-react";
-import logo from "../../../assets/icon/logo.png";
-import { NavLink } from "react-router-dom";
-import "./NavBar.css";
 import { FaTelegramPlane } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import logo from "../../../assets/icon/logo.png";
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
