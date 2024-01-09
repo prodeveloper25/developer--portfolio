@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
-import Home from "../pages/Home/Home/Home";
-import Services from "../pages/Services/Services";
-import Expertise from "../pages/Home/Expertise/Expertise";
-import Contact from "../pages/Contact/Contact";
 import NotFound from "../Layout/NotFound";
+import Home from "../pages/Home/Home/Home";
+import ContactRoute from "../pages/RoutePages/ContactRoute";
+import ServicesRoute from "../pages/RoutePages/ServicesRoute";
+import SkillsRoute from "../pages/RoutePages/SkillsRoute";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,15 +16,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/services",
-        element: <Services></Services>,
+        element: <ServicesRoute></ServicesRoute>,
       },
       {
         path: "/skills",
-        element: <Expertise></Expertise>,
+        element: <SkillsRoute></SkillsRoute>,
       },
       {
         path: "contact",
-        element: <Contact></Contact>,
+        element: <ContactRoute></ContactRoute>,
       },
     ],
   },
