@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
+import { FaTelegramPlane } from "react-icons/fa";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import homeImage from "../../../assets/animation/homeImage.json";
-import { FaTelegramPlane } from "react-icons/fa";
 
 const About = () => {
   const [typeEffect] = useTypewriter({
@@ -40,7 +40,7 @@ const About = () => {
             Business? Let`s shake hands with Nahid Hasan.
           </p>
           <a href="https://www.fiverr.com/pro_developer25" target="blank">
-            <button className="bg-[#fc3a40] flex gap-2 items-center lg:mt-16 text-white px-4 py-2 duration-300 rounded hover:bg-[#14a800] ">
+            <button className="bg-[#fc3a40]  flex gap-2 items-center lg:mt-16 text-white px-4 py-2 duration-300 rounded hover:bg-[#14a800] ">
               <FaTelegramPlane className="text-lg"></FaTelegramPlane> Hire me
             </button>
           </a>

@@ -30,7 +30,7 @@ const Services = () => {
               may Like my services.
             </p>
             <div className="lg:flex md:flex items-center lg:gap-20 md:gap-4 lg:mt-10 md:mt-7 mt-4">
-              <div className="flex items-center lg:gap-2 md:gap-2 gap-4">
+              <div className="flex  items-center lg:gap-2 md:gap-2 gap-4">
                 <img
                   className="lg:w-16 md:w-9 w-14"
                   src={webDevelopmentImg}
@@ -40,7 +40,7 @@ const Services = () => {
                   Web Developmet
                 </h4>
               </div>
-              <div className="flex lg:mt-0 md:mt-0 mt-3 items-center lg:gap-2 md:gap-2 gap-4">
+              <div className="flex lg:mt-0 md:mt-0 mt-3 items-center lg:gap-2  md:gap-2 gap-4">
                 <img
                   className="lg:w-16 md:w-9 w-14"
                   src={webDesingImg}

@@ -1,15 +1,15 @@
-import statisticsImg from "../../../assets/image/statisticsImg.png";
+import { useState } from "react";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 import smailImg from "../../../assets/icon/happy.png";
 import projectImg from "../../../assets/icon/project.png";
 import supportImg from "../../../assets/icon/support.png";
-import CountUp from "react-countup";
-import { useState } from "react";
-import ScrollTrigger from "react-scroll-trigger";
+import statisticsImg from "../../../assets/image/statisticsImg.png";
 
 const Statistics = () => {
   const [counterOn, setCounterOn] = useState(false);
   return (
-    <div className="lg:mt-20 md:mt-16 mt-16 pb-8">
+    <div className="lg:mt-20 md:mt-16 mt-16 pb-8 animate-updown2">
       <ScrollTrigger
         onEnter={() => {
           setCounterOn(true);

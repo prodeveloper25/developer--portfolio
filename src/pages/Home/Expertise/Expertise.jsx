@@ -35,9 +35,9 @@ const Expertise = () => {
                   animation="duration-300"
                   style="dark"
                 >
-                  <div className="lg:w-28 lg:h-28 md:w-20 md:h-w-20 lg:hover:w-[112px] duration-200 lg:hover:px-5 lg:hover:py-5 bg-white lg:px-6 lg:py-6 md:px-4 md:py-3 w-16 h-16 px-2 py-2 shadow">
+                  <div className="lg:w-28 lg:h-28 md:w-20 md:h-w-20 lg:hover:w-[112px]  duration-200 lg:hover:px-5 lg:hover:py-5 bg-white lg:px-6 lg:py-6 md:px-4 md:py-3 w-16 h-16 px-2 py-2 shadow">
                     <img
-                      className="lg:w-24 md:w-24 w-14"
+                      className="lg:w-24 md:w-24 w-14 "
                       src={item.image}
                       alt=""
                     />
