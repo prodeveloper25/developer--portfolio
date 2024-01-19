@@ -1,3 +1,5 @@
+import Aos from "aos";
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import Contact from "../../Contact/Contact";
 import Services from "../../Services/Services";
@@ -8,6 +10,12 @@ import Review from "../Review/Review";
 import Statistics from "../Statistics/Statistics";
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1200,
+      easing: "ease-in-out",
+    });
+  });
   return (
     <>
       <Helmet>

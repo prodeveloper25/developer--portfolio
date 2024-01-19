@@ -23,7 +23,10 @@ const Expertise = () => {
           As a <span className="text-[#14a800]">Web Developer</span> I am good
           at using:
         </h2>
-        <div className="lg:-mt-5 md:-mt-3 -mt-0 lg:flex md:flex items-center lg:gap-6 md:gap-6">
+        <div
+          data-aos="fade-down"
+          className="lg:-mt-5 md:-mt-3 -mt-0 lg:flex md:flex items-center lg:gap-6 md:gap-6"
+        >
           <div className="lg:w-1/2 md:w-1/2 w-full">
             <div className="grid lg:grid-cols-4 md:grid-cols-4 gap-4 grid-cols-3 lg:mb-0 md:mb-0 mb-10 lg:w-full md:w-full w-[310px] mx-auto">
               {expertises.map((item) => (

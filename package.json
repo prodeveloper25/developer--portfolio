@@ -12,6 +12,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@smastrom/react-rating": "^1.4.0",
+    "aos": "^2.3.4",
     "framer-motion": "^10.18.0",
     "keep-react": "^1.1.0",
     "localforage": "^1.10.0",

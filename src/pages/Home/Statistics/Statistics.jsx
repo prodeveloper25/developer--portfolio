@@ -9,7 +9,7 @@ import statisticsImg from "../../../assets/image/statisticsImg.png";
 const Statistics = () => {
   const [counterOn, setCounterOn] = useState(false);
   return (
-    <div className="lg:mt-20 md:mt-16 mt-16 pb-8 animate-updown2">
+    <div className="lg:mt-20 md:mt-16 mt-16 pb-8">
       <ScrollTrigger
         onEnter={() => {
           setCounterOn(true);
@@ -17,6 +17,7 @@ const Statistics = () => {
         onExit={() => setCounterOn(false)}
       >
         <div
+          data-aos="fade-up"
           className="lg:px-20 lg:py-10 md:py-8 md:px-4 px-4 py-6  shadow-2xl"
           style={{
             backgroundImage: `url("${statisticsImg}")`,

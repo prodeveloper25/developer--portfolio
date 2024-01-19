@@ -13,19 +13,20 @@ import {
 } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import ScrollToTop from "react-scroll-to-top";
 import logoImg from "../../../assets/icon/logo2.png";
+import BackToTopButton from "../../BackToTopButton/BackToTopButton";
 
 const Footer = () => {
   return (
     <>
-      <ScrollToTop
+      {/* <ScrollToTop
         smooth
         top="310"
         svgPath="M128,216,88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0V96l80,40v32l-80-16v32L168,200v32Z"
         className="pl-[6px]  animate-updown bg-red-100 duration-1000"
         color="#14a800"
-      />
+      /> */}
+      <BackToTopButton></BackToTopButton>
       <footer className="bg-[#bdf8b5] mt-3">
         <div className="max-w-screen-xl mx-auto">
           <div className="lg:flex md:flex flex-1 lg:px-2 md:px-8 py-10 px-4 lg:gap-0 md:gap-48">

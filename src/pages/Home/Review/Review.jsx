@@ -1,12 +1,12 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/scrollbar";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Scrollbar, Navigation } from "swiper/modules";
-import { useEffect, useState } from "react";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
+import { useEffect, useState } from "react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import { Navigation, Scrollbar } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const Review = () => {
   const [reviews, setReviews] = useState([]);
@@ -16,7 +16,7 @@ const Review = () => {
       .then((data) => setReviews(data));
   }, []);
   return (
-    <div className="lg:mt-16 md:mt-12 mt-8">
+    <div className="lg:mt-16 md:mt-12 mt-8" data-aos="fade-up">
       <div>
         <h2 className="text-center lg:text-3xl md:text-2xl text-xl lg:mb-4 mb-3">
           My Client <span className="text-[#fc3a40]">Feedback</span>
