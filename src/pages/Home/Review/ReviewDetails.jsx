@@ -11,12 +11,12 @@ const ReviewDetails = ({ review }) => {
   };
   return (
     <p className="mt-3 mb-2 text-white">
-      {showDetails ? review.details : review.details.slice(0, 85)}
+      {showDetails ? review.details : review.details.slice(0, 78)}
       <button
         onClick={handleShowAndHideDetails}
         className="text-[#FFB23F] ml-1"
       >
-        {showDetails ? "Less More" : "Read More..."}
+        {showDetails ? "Less More" : "Read More"}
       </button>
     </p>
   );
