@@ -12,7 +12,7 @@ import Statistics from "../Statistics/Statistics";
 const Home = () => {
   useEffect(() => {
     Aos.init({
-      duration: 1200,
+      duration: 1000,
       easing: "ease-in-out",
     });
   });
