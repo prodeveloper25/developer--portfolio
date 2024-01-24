@@ -81,7 +81,7 @@ const NavBar = () => {
                     href="https://www.fiverr.com/pro_developer25"
                     target="blank"
                   >
-                    <button className="bg-[#fc3a40]   lg:hover:scale-110 flex gap-2 items-center text-white px-4 py-2 lg:ml-44 duration-300 rounded hover:bg-[#14a800] ">
+                    <button className="bg-[#fc3a40]   lg:hover:scale-110 flex gap-2 items-center text-white px-4 py-2 lg:ml-44 duration-200 rounded hover:bg-[#14a800] ">
                       <FaTelegramPlane className="text-lg"></FaTelegramPlane>{" "}
                       Hire me
                     </button>
