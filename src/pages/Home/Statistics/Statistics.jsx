@@ -38,7 +38,7 @@ const Statistics = () => {
             <div className="flex lg:gap-10">
               {/* item number 1 start */}
               <div>
-                <div className="bg-[#14a800] lg:px-2 lg:py-2 lg:w-16 w-12 px-2 py-2  rounded-full mx-auto mb-2">
+                <div className="bg-[#14a800] lg:hover:scale-105 duration-200 lg:px-2 lg:py-2 lg:w-16 w-12 px-2 py-2  rounded-full mx-auto mb-2">
                   <img className="w-full" src={smailImg} alt="" />
                 </div>
                 <h1 className="lg:text-3xl text-xl font-bold text-center">
@@ -54,7 +54,7 @@ const Statistics = () => {
               {/* item number 1 end */}
               {/* item number 2 start */}
               <div>
-                <div className="bg-[#14a800] lg:px-2 lg:py-2 lg:w-16 w-12 px-2 py-2 mx-auto mb-2 rounded-full">
+                <div className="bg-[#14a800] lg:hover:scale-105 duration-200 lg:px-2 lg:py-2 lg:w-16 w-12 px-2 py-2 mx-auto mb-2 rounded-full">
                   <img className="w-full" src={projectImg} alt="" />
                 </div>
                 <h1 className="lg:text-3xl text-xl font-bold text-center">
@@ -70,7 +70,7 @@ const Statistics = () => {
               {/* item number 2 end */}
               {/* item number 3 start */}
               <div>
-                <div className="bg-[#14a800] lg:px-2 lg:py-2 lg:w-16 w-12 px-2 py-2 mx-auto mb-2 rounded-full">
+                <div className="bg-[#14a800] lg:hover:scale-105 duration-200 lg:px-2 lg:py-2 lg:w-16 w-12 px-2 py-2 mx-auto mb-2 rounded-full">
                   <img className="w-full" src={supportImg} alt="" />
                 </div>
                 <h1 className="lg:text-3xl text-xl font-bold text-center">
