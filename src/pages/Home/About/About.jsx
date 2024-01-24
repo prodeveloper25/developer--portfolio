@@ -11,7 +11,7 @@ const About = () => {
     deleteSpeed: 50,
   });
   return (
-    <div className="lg:mt-12 md:mt-10 mt-7">
+    <div className="lg:mt-12 md:mt-10 mt-7 " data-aos="fade-down">
       <div className="flex items-center gap-2 lg:mb-6 md:mb-5 mb-3">
         <h2>------</h2>
         <div className="bg-[#bdf8b5] text-[#14a800] px-3 rounded py-1">
