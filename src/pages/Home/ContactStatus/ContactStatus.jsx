@@ -4,9 +4,9 @@ import contactStImg from "../../../assets/image/contactStImage.png";
 
 const ContactStatus = () => {
   return (
-    <div className="lg:mt-28 md:mt-16 mt-10 lg:mb-28 md:mb-16 mb-12  lg:mx-14">
+    <div className="lg:mt-28 mx-4 md:mt-16 mt-10 lg:mb-28 md:mb-16 mb-12  lg:mx-14">
       <div
-        className="lg:px-10 lg:py-16 md:py-16 md:px-4 px-4 py-6 lg:flex md:flex items-center shadow-2xl"
+        className="lg:px-10 lg:py-16 md:py-16 md:px-4 px-4 py-6 lg:flex md:flex items-center shadow-2xl max-w-screen-xl mx-auto "
         style={{
           backgroundImage: `url("${contactStImg}")`,
           backgroundRepeat: "no-repeat",

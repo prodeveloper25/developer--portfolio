@@ -5,8 +5,8 @@ import webDevelopmentImg from "../../assets/icon/webDevelopment.png";
 
 const Services = () => {
   return (
-    <>
-      <div data-aos="fade-right" className="lg:mt-20 md:mt-16 mt-14">
+    <div className="mx-4" data-aos="fade-right">
+      <div className="lg:mt-20 md:mt-16 mt-14 max-w-screen-xl mx-auto">
         <div className="flex items-center gap-2 lg:mb-6 md:mb-5 mb-4">
           <h2>------</h2>
           <div className="bg-[#ffc5c7] text-[#fc3a40] px-3 rounded py-1">
@@ -52,7 +52,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
