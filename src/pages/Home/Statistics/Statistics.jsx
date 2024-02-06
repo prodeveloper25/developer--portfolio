@@ -9,7 +9,11 @@ import statisticsImg from "../../../assets/image/statisticsImg.png";
 const Statistics = () => {
   const [counterOn, setCounterOn] = useState(false);
   return (
-    <div className="lg:mt-20 md:mt-16 mt-16 pb-8 mx-4" data-aos="fade-up">
+    <div
+      className="lg:mt-20 md:mt-16 mt-16 pb-8 mx-4"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <ScrollTrigger
         onEnter={() => {
           setCounterOn(true);
