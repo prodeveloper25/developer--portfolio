@@ -5,7 +5,7 @@ import contactStImg from "../../../assets/image/contactStImage.png";
 const ContactStatus = () => {
   return (
     <div
-      data-aos="zoom-in-left"
+      data-aos="zoom-in"
       className="lg:mt-28 mx-4 md:mt-16 mt-10 lg:mb-28 md:mb-16 mb-12  lg:mx-14"
     >
       <div

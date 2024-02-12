@@ -5,7 +5,7 @@ import webDevelopmentImg from "../../assets/icon/webDevelopment.png";
 
 const Services = () => {
   return (
-    <div className="mx-4">
+    <div data-aos="fade-right" className="mx-4">
       <div className="lg:mt-20 md:mt-16 mt-14 max-w-screen-xl mx-auto">
         <div className="flex items-center gap-2 lg:mb-6 md:mb-5 mb-4">
           <h2>------</h2>
@@ -14,15 +14,12 @@ const Services = () => {
           </div>
         </div>
         <div className="lg:flex md:flex items-center -mt-4">
-          <div
-            data-aos="fade-up-right"
-            className="lg:w-1/2 md:w-1/2 w-full lg:mb-0 md:mb-0 mb-7"
-          >
+          <div className="lg:w-1/2 md:w-1/2 w-full lg:mb-0 md:mb-0 mb-7">
             <div className="lg:w-[560px] w-full">
               <Lottie animationData={servicesImg}></Lottie>
             </div>
           </div>
-          <div data-aos="fade-up-left" className="lg:w-1/2 md:w-1/2 w-full">
+          <div className="lg:w-1/2 md:w-1/2 w-full">
             <h1 className="lg:text-4xl md:text-2xl text-2xl mb-3 lg:w-[600px] lg:mb-4 md:mb-3">
               I Provide My Clients With The Following{" "}
               <span className="text-[#14a800]">Vaulable Services</span>
